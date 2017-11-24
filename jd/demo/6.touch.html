@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    div {
+        height: 200px;
+        width: 200px;
+        background-color: red;
+    }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <script>
+    window.onload = function() {
+        var dom = document.getElementsByTagName('div')[0];
+        var isMove = false;
+        dom.addEventListener('touchstart', function() {
+            console.log("touchstart");
+        });
+        dom.addEventListener('touchmove', function() {
+            console.log("touchmove");
+            isMove = true;
+        });
+        dom.addEventListener('touchend', function() {
+            console.log("touchend");
+            if(isMove == false){
+                //为了提高响应的速度
+                console.log('tap');
+            }
+        });
+        isMove = false;
+        //click事件在移动端 会有一个触发延时的现象 300 毫秒
+        //为什么会出现这个现象
+        //为了不让滑动事件失效所以点击事件要延时300毫秒
+        dom.addEventListener('click', function() {
+            console.log("click");
+        })
+    }
+    </script>
+</body>
+
+</html>

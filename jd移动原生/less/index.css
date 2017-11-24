@@ -1,0 +1,258 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  /* 设置盒模型不会被padding border撑大 不会出横向滚动条 */
+  box-sizing: border-box;
+  /* 清除移动端点击高亮背景色 */
+  -webkit-tap-highlight-color: transparent;
+}
+a {
+  text-decoration: none;
+  color: #666;
+}
+li {
+  list-style: none;
+}
+img {
+  /* 解决图片3px的问题 */
+  vertical-align: bottom;
+}
+input {
+  border: 0;
+  /* 清除移动端输入框内边框 */
+  outline: 0;
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* 定义主题色变量 */
+.text-center {
+  text-align: center;
+}
+.bt {
+  border-top: 1px solid #ccc;
+}
+.bl {
+  border-left: 1px solid #ccc;
+}
+.br {
+  border-right: 1px solid #ccc;
+}
+.bb {
+  border-bottom: 1px solid #ccc;
+}
+.container {
+  max-width: 640px;
+  min-width: 300px;
+  background-color: #ccc;
+  margin: 0px auto;
+}
+header {
+  color: white;
+}
+header .search {
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  max-width: 640px;
+}
+header .search > .logo {
+  width: 60px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-image: url(../images/sprites.png);
+  /* 设置背景大小缩小一倍 */
+  background-size: 200px 200px;
+  /* 图片缩小了一倍 定位也要缩小一倍 量的时候是220px 缩小一倍110px */
+  background-position: 0 -110px;
+}
+header .search > form {
+  margin-left: 70px;
+  margin-right: 50px;
+  height: 40px;
+}
+header .search > form input {
+  width: 100%;
+  height: 30px;
+  border-radius: 15px;
+  margin-top: 5px;
+}
+header .search > .login {
+  width: 50px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  line-height: 40px;
+}
+.slide {
+  position: relative;
+  overflow: hidden;
+}
+.slide .slidebody {
+  width: 1000%;
+  transform: translateX(-10%);
+}
+.slide .slidebody .item {
+  width: 10%;
+  float: left;
+}
+.slide .slidebody .item > a {
+  display: block;
+  width: 100%;
+}
+.slide .slidebody .item > a > img {
+  width: 100%;
+}
+.slide .points {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.slide .points > li {
+  float: left;
+  margin-left: 10px;
+}
+.slide .points > li a {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+.slide .points > li a.active {
+  background-color: #fff;
+}
+nav {
+  background-color: #fff;
+  padding: 10px;
+}
+nav ul {
+  width: 100%;
+}
+nav ul > li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding-top: 10px;
+}
+nav ul > li > a {
+  display: block;
+  width: 100%;
+}
+nav ul > li > a > p {
+  font-size: 12px;
+}
+nav ul > li > a > img {
+  width: 40px;
+}
+.seckill {
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+.seckill .seckill-topbar {
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+.seckill .seckill-topbar > .naoz {
+  text-align: center;
+  padding-left: 10px;
+}
+.seckill .seckill-topbar > .naoz > img {
+  width: 20px;
+  height: 25px;
+}
+.seckill .seckill-topbar > h4 {
+  font-weight: normal;
+  font-size: 14px;
+  padding-left: 10px;
+  color: #f23030;
+}
+.seckill .seckill-topbar > ul {
+  margin-top: 7px;
+}
+.seckill .seckill-topbar > ul li {
+  float: left;
+  margin: 0 5px;
+  background-color: black;
+  color: #fff;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+}
+.seckill .seckill-topbar > ul li:nth-of-type(3n) {
+  background-color: #fff;
+  color: black;
+}
+.seckill .product {
+  border-radius: 4px;
+}
+.seckill .product ul {
+  width: 100%;
+}
+.seckill .product ul li {
+  width: 33.333%;
+  float: left;
+}
+.seckill .product ul li a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+}
+.seckill .product ul li a img {
+  width: 60%;
+}
+.seckill .product ul li a p:nth-of-type(1) {
+  color: #f23030;
+}
+.seckill .product ul li a p:nth-of-type(2) {
+  text-decoration: line-through;
+}
+.market .topbar h3 {
+  font-size: 16px;
+  font-weight: normal;
+  padding-left: 10px;
+  position: relative;
+}
+.market .topbar h3::before {
+  content: "";
+  width: 3px;
+  height: 10px;
+  background-color: #f23030;
+  position: absolute;
+  top: 5px;
+  left: 4px;
+}
+.market .product {
+  width: 100%;
+}
+.market .product a {
+  display: block;
+}
+.market .product .left {
+  width: 50%;
+}
+.market .product .left a img {
+  width: 100%;
+}
+.market .product .right {
+  width: 50%;
+}
+.market .product .right a img {
+  width: 100%;
+}

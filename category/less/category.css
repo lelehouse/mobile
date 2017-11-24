@@ -1,0 +1,152 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  font-family: "微软雅黑";
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #666;
+}
+img {
+  vertical-align: middle;
+}
+input {
+  border: 0;
+  outline: 0;
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.bl {
+  border-left: 1px solid #ccc;
+}
+.br {
+  border-right: 1px solid #ccc;
+}
+.bt {
+  border-top: 1px solid #ccc;
+}
+.bb {
+  border-bottom: 1px solid #ccc;
+}
+html,
+body {
+  height: 100%;
+  background-color: #eee;
+}
+#topbar {
+  height: 45px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+#topbar [class^='icon-'] {
+  width: 40px;
+  height: 44px;
+  position: absolute;
+  top: 0;
+  padding: 10px;
+  background-size: 200px 200px;
+  background-clip: content-box;
+  background-origin: content-box;
+  background-image: url('../images/sprites.png');
+}
+#topbar .icon-back {
+  left: 0;
+  background-position-x: -20px;
+}
+#topbar .icon-menu {
+  right: 0;
+  background-position-x: -60px;
+}
+#topbar form {
+  padding-top: 7px;
+  height: 100%;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+#topbar form input {
+  height: 30px;
+  width: 100%;
+  padding-left: 10px;
+  border-radius: 4px;
+}
+#category {
+  padding-top: 45px;
+  height: 100%;
+  overflow: hidden;
+}
+#category .category-left {
+  width: 100px;
+  float: left;
+  height: 100%;
+  overflow: hidden;
+}
+#category .category-left ul li {
+  height: 50px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+#category .category-left ul li a {
+  display: block;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
+#category .category-right {
+  height: 100%;
+  overflow: hidden;
+}
+#category .category-right .category-list .banner {
+  display: block;
+  width: 100%;
+}
+#category .category-right .category-list .banner img {
+  text-align: center;
+  width: 100%;
+  padding: 0 10px;
+}
+#category .category-right .category-list .hotcate {
+  padding: 0 10px;
+  border-radius: 4px;
+}
+#category .category-right .category-list .hotcate h3 {
+  font-weight: 700px;
+  font-size: 18px;
+}
+#category .category-right .category-list .hotcate ul {
+  overflow: hidden;
+  width: 100%;
+}
+#category .category-right .category-list .hotcate ul li {
+  float: left;
+  width: 33.333%;
+  background-color: #fff;
+}
+#category .category-right .category-list .hotcate ul li a {
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+#category .category-right .category-list .hotcate ul li a img {
+  width: 50px;
+}

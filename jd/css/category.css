@@ -1,0 +1,91 @@
+/*
+* @Author: zhengwei
+* @Date:   2016-06-15 18:21:50
+* @Last Modified by:   zhengwei
+* @Last Modified time: 2016-06-16 11:16:42
+*/
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+
+#category {
+    padding-top: 45px;
+    height: 100%;
+}
+
+#category > .category-left {
+    width: 90px;
+    height: 100%;
+    overflow: hidden;
+}
+
+#category > .category-left > ul {}
+
+#category > .category-left > ul > li {
+    height: 50px;
+    width: 90px;
+    line-height: 50px;
+    background-color: #f3f4f6;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+#category > .category-left > ul > li.now > a {
+    color: #d8505c;
+    background-color: #fff;
+}
+
+#category > .category-left > ul > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#category > .category-right {
+    overflow: hidden;
+    height: 100%;
+}
+
+#category > .category-right > .category-right-content > .banner {
+    width: 100%;
+    display: block;
+    padding: 10px;
+}
+
+#category > .category-right > .category-right-content > .banner >img {
+    width: 100%;
+    display: block;
+}
+
+#category > .category-right > .category-right-content > .product {
+    padding: 0 10px;
+}
+
+#category > .category-right > .category-right-content > .product > h3 {
+    font-size: 12px;
+}
+
+#category > .category-right > .category-right-content > .product > ul > li {
+    width: 33.33%;
+    float: left;
+}
+
+#category > .category-right > .category-right-content > .product > ul > li > a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+}
+
+#category > .category-right > .category-right-content > .product > ul > li > a > img {
+    width: 62px;
+    height: 62px;
+    display: block;
+    margin: 0 auto;
+}

@@ -1,0 +1,337 @@
+/*
+* @Author: zhengwei
+* @Date:   2016-06-16 11:18:13
+* @Last Modified by:   zhengwei
+* @Last Modified time: 2016-06-19 15:00:51
+*/
+
+html,
+body {
+    background: #f5f5f5;
+    min-width: 300px;
+}
+
+#header #topbar {
+    position: relative;
+}
+
+
+/* 安全提示 */
+
+.safetip {
+    background-color: #fff;
+    height: 34px;
+    width: 100%;
+    border-bottom: 1px solid #c0c0c0;
+    text-align: center;
+}
+
+.safetip > p {
+    display: inline-block;
+    line-height: 34px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.safetip > p::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: url(../images/safe_icon.png) no-repeat;
+    background-size: 18px 18px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+
+/*自定义复选框*/
+
+.checkbox {
+    height: 34px;
+    width: 40px;
+    display: block;
+    background: url(../images/shop-icon.png) no-repeat;
+    background-size: 50px 100px;
+    padding: 7px 10px;
+    background-clip: content-box;
+    background-origin: content-box;
+}
+
+.checkbox[checked] {
+    background-position: -25px 0;
+}
+
+
+/* 店铺模块 */
+
+#shop {
+    border-bottom: 1px solid #c0c0c0;
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+#shop >.shop-title {
+    height: 34px;
+    position: relative;
+}
+
+#shop >.shop-title > .shop-title-checkbox {
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#shop >.shop-title > .shop-title-content {
+    padding-left: 40px;
+    width: 100%;
+    line-height: 30px;
+}
+
+#shop >.shop-title > .shop-title-content > .pull-left > img {
+    height: 13px;
+    width: 15px;
+    margin-top: 10px;
+    float: left;
+}
+
+#shop >.shop-title > .shop-title-content > .pull-left > span {
+    margin-left: 10px;
+    font-size: 15px;
+    float: left;
+}
+
+#shop >.shop-title > .shop-title-content > .pull-right {
+    color: #d8505c;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+
+/* 商品盒子 */
+
+.product {
+    position: relative;
+    border-top: 1px solid #c0c0c0;
+}
+
+.product > .product-checkbox {
+    width: 40px;
+    position: absolute;
+}
+
+.product > .product-content {
+    width: 100%;
+    padding-left: 40px;
+}
+
+.product > .product-content > .product-image {
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+.product > .product-content > .product-image > img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+/* 商品信息模块 */
+
+.product {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.product > .product-content > .product-info {
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.product > .product-content > .product-info > .product-name {
+    display: block;
+    color: #666;
+    height: 30px;
+    width: 100%;
+    overflow: hidden;
+    line-height: 15px;
+}
+
+.product > .product-content > .product-info > .product-price {
+    color: #d8505c;
+    height: 23px;
+    width: 100%;
+    line-height: 23px;
+}
+
+.product > .product-content > .product-info > .product-option {}
+
+.option-box {}
+
+.option-box > span {
+    border: 1px solid #ccc;
+    width: 32px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    float: left;
+}
+
+.option-box > span:first-of-type {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.option-box > span:last-of-type {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.option-box > input {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    width: 32px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    float: left;
+}
+
+
+/* 垃圾箱盒子 */
+
+.delete-box {}
+
+.delete-box span:first-child {
+    height: 5px;
+    width: 20px;
+    display: block;
+    background: url(../images/delete_up.png) no-repeat;
+    background-size: 20px 5px;
+    margin-left: -1px;
+}
+
+.delete-box span:last-child {
+    height: 18px;
+    width: 18px;
+    display: block;
+    background: url(../images/delete_down.png) no-repeat;
+    background-size: 18px 18px;
+}
+
+#win {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+
+#win > .win-box {
+    width: 80%;
+    margin: 0 auto;
+    min-height: 100px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 150px;
+}
+
+#win > .win-box > .title {
+    text-align: center;
+    font-size: 18px;
+    line-height: 75px;
+    height: 75px;
+    border-bottom: 1px solid #ccc;
+}
+
+#win > .win-box > .button {
+    width: 100%;
+    padding-top: 10px;
+}
+
+#win > .win-box > .button > a {
+    width: 45%;
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 4px;
+    float: left;
+}
+
+#win > .win-box > .button > .cancel {
+    border: 1px solid #ccc;
+    margin-right: 10%;
+}
+
+#win > .win-box > .button > .submit {
+    border: 1px solid #ccc;
+    background: #d8505c;
+    color: #fff;
+}
+
+#win > .win-box.bounceInDown {
+    animation: bounceInDown 2s;
+}
+
+
+/* 弹出框动画 */
+
+@keyframes bounceInDown {
+    0% {
+        transform: translateY(-3000px);
+        -webkit-transform: translateY(-3000px);
+        opacity: 0;
+    }
+    60% {
+        transform: translateY(30px);
+        -webkit-transform: translateY(30px);
+        opacity: 1;
+    }
+    75% {
+        transform: translateY(-15px);
+        -webkit-transform: translateY(-15px);
+    }
+    90% {
+        transform: translateY(7px);
+        -webkit-transform: translateY(7px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+        -webkit-transform: none;
+    }
+}
+
+@-webkit-keyframes bounceInDown {
+    0% {
+        transform: translateY(-3000px);
+        -webkit-transform: translateY(-3000px);
+        opacity: 0;
+    }
+    60% {
+        transform: translateY(30px);
+        -webkit-transform: translateY(30px);
+        opacity: 1;
+    }
+    75% {
+        transform: translateY(-15px);
+        -webkit-transform: translateY(-15px);
+    }
+    90% {
+        transform: translateY(7px);
+        -webkit-transform: translateY(7px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+        -webkit-transform: none;
+    }
+}

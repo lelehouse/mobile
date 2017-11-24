@@ -1,0 +1,128 @@
+/*
+* @Author: zhengwei
+* @Date:   2016-06-14 11:56:37
+* @Last Modified by:   zhengwei
+* @Last Modified time: 2016-06-16 11:20:13
+*/
+
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent !important;
+    /*设置点击高亮效果设置透明则可以达到去除高亮*/
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: "MicroSoft YaHei", sans-serif;
+    /* 备用默认字体 */
+    color: #333;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #333;
+}
+
+input {
+    border: none;
+    outline: none;
+    /* 移动端清除浏览器默认样式 */
+    -webkit-appearance: none;
+}
+
+
+/* common css */
+
+.pull-left {
+    float: left !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.clearfix::after,
+.clearfix::before {
+    content: "";
+    line-height: 0;
+    height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+
+/* 设置背景图的公共样式一icon-开头的和包含空格 icon-的标签可以选择到 */
+
+[class^="icon-"],
+[class*=" icon-"] {
+    background: url("../images/sprites.png") no-repeat;
+    background-size: 200px 200px;
+}
+/* 顶部通栏 */
+
+#topbar {
+    height: 45px;
+    border-bottom: 1px solid #e0e0e0;
+    background: url(../images/header-bg.png) repeat-x;
+    background-size: 1px 44px;
+    position: absolute;
+    width: 100%;
+}
+
+#topbar > .icon-back {
+    left: 0;
+    background-position: -20px 0;
+}
+
+#topbar > a {
+    top: 0;
+    width: 40px;
+    height: 44px;
+    position: absolute;
+    padding: 12px 10px;
+    /* 背景的定位从什么位置开始是从内容开始还是从边框开始 */
+    background-origin: content-box;
+    /*背景的内容从什么位置开始显示*/
+    background-clip: content-box;
+}
+
+#topbar > form {
+    width: 100%;
+    padding: 0 40px;
+}
+
+#topbar > h3 {
+    text-align: center;
+    font-size: 16px;
+    line-height: 44px;
+    font-weight: normal;
+    width: 100%;
+}
+
+#topbar > form > input {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    margin-top: 7px;
+    padding: 0 10px;
+}
+
+#topbar > .icon-menu {
+    right: 0;
+    background-position: -60px 0;
+}

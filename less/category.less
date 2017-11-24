@@ -1,0 +1,119 @@
+
+@import "base.less";
+/* 顶部通栏 */
+ 
+html,body{
+    height: 100%;
+    background-color: #eee;
+}
+#topbar{
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #ccc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    [class^="icon-"]{
+        width: 40px;
+        height: 44px;
+        padding:11px 10px;;
+        background-size:200px 200px;
+        background-image: url("../images/sprites.png");
+        background-clip: content-box;
+        background-origin: content-box;
+        position: absolute;
+        top: 0;
+    }
+    .icon-back{
+        background-position-x: -20px;
+        left:0;
+    }
+    .icon-menu{
+        background-position-x:-60px;
+        right: 0;
+    }
+    form{
+        padding-top: 6px;
+        margin-left: 40px;
+        margin-right: 40px;
+        >input{
+            width: 100%;
+            height: 30px;
+            border-radius: 4px;
+            padding-left: 10px;
+        }
+        
+    }
+    
+}
+
+//左侧
+#category{
+    height: 100%;
+    padding-top: 45px;
+    overflow: hidden;
+    height:100%;
+    .category-left{
+        width: 100px; 
+        float: left;
+        overflow: hidden;
+       height:100%;
+       background-color: #fff;
+        ul{ 
+            background-color: #eee;
+            li{
+                text-align: center;
+                border-bottom: 1px solid #ccc;
+                &.active{
+                    a{
+                        color: @main-color;
+                    }
+                }
+                a{
+                    display: block;
+                    width: 100%;
+                    height: 50px;
+                    line-height:50px;
+                }
+            }
+        }
+    }
+    .category-right{
+        padding: 10px;
+        border-left: 1px solid #ccc;
+        overflow: hidden;
+        height: 100%;
+        .banner{
+            display: block;
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        .hotcate{
+            h3{
+                font-weight: normal;
+                font-size: 18px;
+                background-color: #fff;
+            }
+            ul{
+               
+                li{
+                    float: left;
+                    width: 33.3333%;
+                    background-color: #fff;
+                    a{
+                        display: block;
+                        text-align: center;
+                        width: 100%;
+                        img{
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+     
+}

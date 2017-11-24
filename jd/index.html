@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- meta:vp -->
+    <!-- 视口 写在head标签里面 -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- 页面的基础样式 -->
+    <link rel="stylesheet/less" href="less/base.less">
+    <!-- 当前页面的样式文件 -->
+    <link rel="stylesheet/less" href="less/index.less">
+    <!-- less编译器 -->
+    <script src="lib/less/less.js"></script>
+</head>
+
+<body>
+    <!-- 主页的布局容器 -->
+    <div id="layout">
+        <!-- 网页头部 -->
+        <header id="header">
+            <!-- 京东的logo精灵图 -->
+            <i class="icon-logo"></i>
+            <!-- 中间的自适应表单 -->
+            <form action="#">
+                <!-- 搜索图标 因为要相对搜索框定位 -->
+                <div class="icon-search"></div>
+                <!-- search有语义角度  同时输入法右下角的键的文字会变成搜索(发qq消息就是发送 有些时候enter)-->
+                <input type="search">
+            </form>
+            <!-- 右侧登录 -->
+            <a href="#" class="login">登录</a>
+        </header>
+        <!-- 轮播图 -->
+        <section id="slide">
+            <img src="images/l1.jpg" alt="">
+        </section>
+        <!-- 网站的导航 -->
+        <nav id="navs">
+            <ul class="clearfix">
+                <li>
+                    <a href="#">
+                        <img src="images/nav0.png" alt="">
+                        <p>快下课了</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/nav1.png" alt="">
+                        <p>快下课了</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/nav2.png" alt="">
+                        <p>快下课了</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/nav3.png" alt="">
+                        <p>快下课了</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/nav4.png" alt="">
+                        <p>快下课了</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/nav5.png" alt="">
+                        <p>快下课了</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/nav6.png" alt="">
+                        <p>快下课了</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/nav7.png" alt="">
+                        <p>快下课了</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+        <!-- 首页的主体商品部分 -->
+        <main id="products">
+            <!-- 秒杀商品 -->
+            <div class="seckill">
+                <!-- 秒杀的头部 -->
+                <div class="seckill-heading">
+                    <img src="images/seckill-icon.png" alt="" class="seckill-icon">
+                    <div class="seckill-name">掌上秒杀</div>
+                    <div class="seckill-downtime">
+                        <span>0</span>
+                        <span>0</span>
+                        <span>:</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>:</span>
+                        <span>0</span>
+                        <span>0</span>
+                    </div>
+                    <div class="seckill-more">
+                        更多>
+                    </div>
+                </div>
+                <!-- 秒杀的主体商品 -->
+                <div class="seckill-body">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="#">                            
+                                <img src="images/detail01.jpg" alt="">
+                                <p>￥10.00</p>
+                                <p>￥10.00</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/detail01.jpg" alt="">
+                                <p>￥10.00</p>
+                                <p>￥10.00</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/detail01.jpg" alt="">
+                                <p>￥10.00</p>
+                                <p>￥10.00</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 普通商品 -->
+            <div class="product"></div>
+        </main>
+    </div>
+    <!-- 当前文件的JS文件 -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>
